@@ -1,0 +1,11 @@
+name: Test
+on:
+  pull-request:
+  push:
+    branches: master
+
+jobs: 
+  test-windows:
+    runs-on: self-hosted
+  steps:
+    - uses: actions/checkout@v3
